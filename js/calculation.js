@@ -49,3 +49,27 @@
       see http://www.w3schools.com/tags/tag_select.asp. Use the same .value
       property to get the value attribute of the currently-selected <option>
 */
+
+document.addEventListener('DOMContentLoaded', function() {
+    'use strict';
+
+    var input1 = document.getElementById('value-1');
+    input1.addEventListener('keyup', function() {
+        var value1 = this.value;
+        value1 = parseInt(value1);
+        console.log(value1);
+        return value1;
+    });
+
+    var input2 = document.getElementById('value-2');
+    input2.addEventListener('keyup', function() {
+        var value2 = this.value;
+        value2 = parseInt(value2);
+        console.log(value2);
+        return value2;
+    });
+
+    'result' = input1 + input2;
+    console.log(input1 + input2);
+
+});
